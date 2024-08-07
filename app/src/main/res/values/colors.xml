@@ -11,4 +11,5 @@
     <color name="Primary">#A8715A</color>
     <color name="Secondary">#DD8560</color>
     <color name="Border">#DEDEDE</color>
+    <color name="Body">#333333</color>
 </resources>
