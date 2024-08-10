@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/imgTwitter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0.33"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_twitter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgInstagram"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0.33"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_instagram"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgYoutube"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0.33"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_youtube"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line_footer" />
+
+    <TextView
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:lineHeight="30dp"
+        android:text="@string/support"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        tools:ignore="UnusedAttribute" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/line_footer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/about"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/contact"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtBlog"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/blog"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45.25dp"
+        android:layout_marginTop="24dp"
+        android:background="#C4C4C4"
+        android:gravity="center"
+        android:text="@string/copyright"
+        android:textColor="@color/Label"
+        android:textSize="12sp" />
+</LinearLayout>

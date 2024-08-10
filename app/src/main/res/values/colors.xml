@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TitleActive">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Label">#555555</color>
+    <color name="Placeholder">#888888</color>
+    <color name="Line">#E0CFBA</color>
+    <color name="InputBackground">#F9F9F9</color>
+    <color name="Background">#F8F0E7</color>
+    <color name="OffWhite">#FCFCFC</color>
+    <color name="Primary">#A8715A</color>
+    <color name="Secondary">#DD8560</color>
+    <color name="Border">#DEDEDE</color>
+    <color name="Body">#333333</color>
+</resources>
