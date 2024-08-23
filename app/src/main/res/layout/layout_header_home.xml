@@ -1,50 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="@drawable/img_header_home">
+    android:background="@drawable/img_header_home"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
             android:fontFamily="@font/bodonimodasc_italic_variablefont"
             android:includeFontPadding="false"
+            android:letterSpacing="0.031"
             android:text="LUXURY"
             android:textColor="@color/Body"
             android:textSize="38.66sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="76dp"
-            android:layout_marginTop="192dp"
+            android:layout_marginStart="60dp"
             android:fontFamily="@font/bodonimodasc_italic_variablefont"
+            android:letterSpacing="0.031"
             android:text="FASHION"
             android:textColor="@color/Body"
             android:textSize="38.66sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/bodonimodasc_italic_variablefont"
-            android:text="ACCESSORIES"
-            android:textColor="@color/Body"
-            android:textSize="38.66sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/bodonimodasc_italic_variablefont"
+                android:text="&amp;"
+                android:textColor="@color/Body"
+                android:textSize="30.59dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bodonimodasc_italic_variablefont"
+                android:letterSpacing="0.031"
+                android:text="ACCESSORIES"
+                android:textColor="@color/Body"
+                android:textSize="38.66sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+
+    <Button
+        android:layout_width="313dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#66000000"
+        android:fontFamily="@font/tenorsans_regular"
+        android:text="EXPLORE COLLECTION"
+        android:textAlignment="center"
+        android:textColor="@color/OffWhite"
+        android:textSize="16sp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
